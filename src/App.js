@@ -1,4 +1,5 @@
 import ExpenseItem from "./comopnents/ExpenseItem";
+import NewExpense from "./comopnents/NewExpense";
 import "./App.css";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
   ];
   return (
     <div className="App">
+      <NewExpense></NewExpense>
       <ExpenseItem
         title={expenses[0].title}
         amount={expenses[0].amount}
